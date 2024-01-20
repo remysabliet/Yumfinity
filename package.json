@@ -1,0 +1,12 @@
+{
+  "name": "yumfinity",
+  "version": "1.0.0",
+  "description": "An application to store and share your recipes",
+  "main": "index.js",
+  "scripts": {
+    "recursive-install": true
+  },
+  "keywords": [],
+  "author": "Rémy SABLIET",
+  "license": "ISC"
+}
