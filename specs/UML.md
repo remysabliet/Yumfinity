@@ -6,7 +6,7 @@
 | - description:    |        | - quantity: float|       +------------------+
 |    string         |        | - imageUrl: string|
 | - imageUrl: string|        | - unit: string   |
-| - category: string|                                     
+| - category: RecipeCategory |                                     
 | - tags: string[]  |                           
 | - rating: float   |                                    
 +------------------+                                      
@@ -24,7 +24,8 @@
 |    string         |    | - quantity: float|   +------------------+
 | - imageUrl: string|    | - unit: string   |
 | - videoUrl: string|    +------------------+
-+------------------+
+| - createdBy: User |      // CreatedBy relation                   
++------------------+      
 
 +------------------+        +------------------+
 |      User        |        | UserCredentials  |
@@ -33,4 +34,11 @@
 | - username: string|        | - password: string|
 | - email: string   |                           
 | - fullName: string|                           
-+------------------+                           
++------------------+           
+
++---------------------+
+|  RecipeCategory     |
++---------------------+
+| - categoryName: string |
+| - subcategories: List<RecipeCategory> |
++---------------------+
