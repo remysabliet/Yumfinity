@@ -34,11 +34,22 @@
 | - username: string|        | - password: string|
 | - email: string   |                           
 | - fullName: string|                           
-+------------------+           
++------------------+       
 
-+---------------------+
-|  RecipeCategory     |
-+---------------------+
-| - categoryName: string |
-| - subcategories: List<RecipeCategory> |
-+---------------------+
++------------------------+      +---------------------+
+|      UserRating       |      |   UserDefinedIngredient  |
++------------------------+      +---------------------+
+| - userRatingId: string|      | - userIngredientId: string|
+| - userId: string      |<-----| - userId: string    |
+| - recipeId: string    |      | - name: string      |
+| - rating: float        |      | - ingredientId: string |  // Foreign Key
++------------------------+      +---------------------+
+
++-----------------+         +------------------------+
+|   Ingredient    |         |  MeasurementUnit       |
++-----------------+         +------------------------+
+| - ingredientId  |         | - unitId: string       |
+| - name: string  |         | - name: string         |
+| - ... other fields |      +------------------------+
+| - unitId: string |<------| - abbreviation: string |
++-----------------+         +------------------------+
