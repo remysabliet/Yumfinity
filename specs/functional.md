@@ -5,7 +5,7 @@ The purpose of the Recipe Application is to provide users with a platform to dis
 
 ## 2 User Interaction
 - User authentication is required to access recipes.
-- A user can create recipes.
+- A user can create/edit/delete recipes 
 - A user can view their recipes as part of a special filter "My recipes," or view all recipes otherwise. By default, a user sees all recipes.
 - Recipes are categorized (e.g., Beverage, Soup, etc.), and a category might have subcategories, such as Cocktail and Mocktail for beverages.
 - Users can give a rating up to 5 stars to a recipe (1, 2, 3, 4, 5). When a user visits a recipe they've rated before, they can see their previous rating and cannot double-rate the same recipe.
